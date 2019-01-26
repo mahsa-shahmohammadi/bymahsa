@@ -16,6 +16,8 @@
     <!-- Custom styles for this template -->
     <link href="css/thumbnail-gallery.css" rel="stylesheet">
 
+    <link href="css/blog.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -80,7 +82,7 @@
               $.each(data, function (index, value) {
                   $("#Pic").append("<div class='col-lg-3 col-md-4 col-xs-6'>" +
                       " <a href='#' class='d-block mb-4 h-100'>" +
-                      "<img class='img-fluid img-thumbnail' src=' " + data[index].Src + " ' alt=''>" +
+                      "<img style='max-height:280' class='img-fluid img-thumbnail' src=' " + data[index].Src + " ' alt=''>" +
                       "  </a>" +
                       " </div>")}); });
       </script>
